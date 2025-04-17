@@ -1,0 +1,33 @@
+nav a:hover,
+nav a:focus,
+nav a:active  {
+  text-decoration: underline;
+}
+
+
+.skip a {
+     position: absolute;
+     top: -40px;
+}
+
+
+.skip a:focus {
+     top: 20px;
+   }
+
+*:focus {
+     outline: 2px solid #007BFF;
+   }
+
+nav{
+    background-color: black;
+    text-align:center;
+    align-items: normal;
+}
+
+nav a {
+    color: white;
+}
+body{
+    background-color: lightgray;
+}
