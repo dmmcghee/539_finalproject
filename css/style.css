@@ -16,7 +16,7 @@ nav a:active  {
    }
 
 *:focus {
-     outline: 2px solid #007BFF;
+     outline: 2px solid #6666FF;
    }
 
 nav{
@@ -31,3 +31,111 @@ nav a {
 body{
     background-color: lightgray;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* .container *{
+    width: 35%;
+    margin: 20px 0px 20px 0px;} */
+
+footer a:visited {
+    color: white;
+}
+
+footer a:hover{
+    color: #6666FF;
+}
+
+button {
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 700px)
+    {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr 1fr;
+            margin: 20px;
+            gap: 25px;
+            /* justify-items: center; */
+            /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+        }
+        /* .container *{
+            width: 35%;
+            margin: 20px 10px 20px 10px; */
+        /* } */
+        /* #pix:nth-child(odd) {
+            grid-column: 2/3;
+            }
+
+        #pix:nth-child(even) {
+            grid-column: 3/5;
+    }
+
+        #text:nth-child(even) {
+        grid-column: 3/5;
+        }
+
+        #text:nth-child(odd) {
+        grid-column: 1/3;
+}
+        #subhead:nth-child(even) {
+        grid-column: 1/3;
+        }
+
+        #subhead:nth-child(odd) {
+        grid-column: 3/5;
+        } */
+
+        #pix {
+            width: 400px;
+        }
+
+        #text {
+            width: auto;
+        }
+
+        figcaption{
+            width: auto;
+            display: contents;
+        }
+
+        figure {
+            grid-row: 1 / 4;
+            display: inline-table;
+            grid-column: 1 / 3;
+            justify-self: center;
+            grid-column: 2/3;
+        }
+
+        h2 {
+            grid-column: 3/4;
+        }
+
+        p {
+            grid-column: 3/4;
+        }
+
+        #pix2{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        .text2{
+            margin: 35px;
+        }
+        /* .sec_1 {
+            grid-row: 1/2;
+        }
+
+        .sec_2 {
+            grid-row: 2/3;
+        }
+
+        .sec_3 {
+            grid-row: 3/4;
+        } */
+    }
